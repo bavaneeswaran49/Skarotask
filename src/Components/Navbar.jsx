@@ -5,13 +5,16 @@ import navlogo from '../assets/SkaroTask.png'
 export default function Navbar() {
     return (
         <>
-            <section className="navbar-full" id='navbar-full'>
-                <nav className="navbar navbar-expand-lg">
+            <section className="navbar-full" id="navbar-full">
+                <nav className="navbar navbar-expand-lg navbar-dark">
                     <div className="container">
                         <NavLink className="navbar-brand col-lg-5 text-light" to="/">
-                            <img src={navlogo} alt="Logo" className="d-inline-block align-text-top mx-2 nav-logo" />
+                            <img
+                                src={navlogo}
+                                alt="Logo"
+                                className="d-inline-block align-text-top mx-2 nav-logo"
+                            />
                         </NavLink>
-
                         <button
                             className="navbar-toggler"
                             type="button"
@@ -22,40 +25,44 @@ export default function Navbar() {
                             aria-label="Toggle navigation"
                         >
                             <span className="navbar-toggler-icon"></span>
+
                         </button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul className="navbar-nav me-auto mb-2 mb-lg-0 container ">
-                                <li className="nav-item col-lg-2  col-xl-2 ">
-                                    <NavLink className="nav-link active text-light" aria-current="page" to="/">
+                            <ul className="navbar-nav me-auto mb-2 mb-lg-0 container">
+
+                                <li className="nav-item col-lg-2 col-xl-2">
+                                    <a className="nav-link text-light" href='#home'>
                                         Home
-                                    </NavLink>
+                                    </a>
                                 </li>
 
-                                <li className="nav-item col-lg-2 col-xl-2 ">
-                                    <NavLink className="nav-link text-light" to="/About">
+                                <li className="nav-item col-lg-2 col-xl-2">
+                                    <a href='#about' className="nav-link text-light" >
                                         About
-                                    </NavLink>
+                                    </a>
                                 </li>
-                                <li className="nav-item col-lg-2  col-xl-2 ">
-                                    <NavLink className="nav-link text-light" to="/Work">
-                                        Work
-                                    </NavLink>
-                                </li>
-                                <li className="nav-item col-lg-2  col-xl-2 ">
-                                    <NavLink className="nav-link text-light" to="/Service">
+
+                                <li className="nav-item col-lg-2 col-xl-2">
+                                    <a className="nav-link text-light" href='#service'>
                                         Service
-                                    </NavLink>
+                                    </a>
                                 </li>
-                                <li className="nav-item col-lg-2 col-xl-2 ">
-                                    <NavLink className="nav-link text-light" to="/Contact">
+
+                                <li className="nav-item col-lg-2 col-xl-2">
+                                    <a className="nav-link text-light" href='#work'>
+                                        Work
+                                    </a>
+                                </li>
+                                <li className="nav-item col-lg-2 col-xl-2">
+                                    <a className="nav-link text-light" href='#footerSpacer'>
                                         Contact
-                                    </NavLink>
+                                    </a>
                                 </li>
                             </ul>
                             <form className="d-flex" role="search">
-                                <button className="btn btn-outline-light" type="submit">
+                                <NavLink className="navbar-brand col-lg-5 text-light" to="/subscribe"> <button className="btn btn-outline-light" type="submit">
                                     Subscribe
-                                </button>
+                                </button></NavLink>
                             </form>
                         </div>
                     </div>
