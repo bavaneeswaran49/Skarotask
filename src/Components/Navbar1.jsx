@@ -1,4 +1,7 @@
 import React from 'react'
+import { NavLink } from "react-router-dom";
+import navlogo from "../assets/SkaroTask.png";
+
 export default function Navbar1() {
     return (
         <>
@@ -48,6 +51,11 @@ export default function Navbar1() {
                                 <li className="nav-item col-lg-2 col-xl-2">
                                     <a className="nav-link text-light" href='#work'>
                                         Work
+                                    </a>
+                                </li>
+                                <li className="nav-item col-lg-2 col-xl-2">
+                                    <a className="nav-link text-light" href='#potfolio'>
+                                        Potfolio
                                     </a>
                                 </li>
                                 <li className="nav-item col-lg-2 col-xl-2">

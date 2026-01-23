@@ -1,11 +1,9 @@
-// import React, { useEffect, useState, useRef  } from 'react'
 import '../App.css'
 import About from './About'
 import Navbar from './Navbar'
 import Service from './Service'
 import Work from './Work'
 import Contact from './Contact'
-import Fact from './Fact'
 export default function Home() {
   return (
     <>
@@ -37,7 +35,7 @@ export default function Home() {
      <About/>
      <Service/>
      <Work />
-      <Fact/>
+      {/* <Fact/> */}
      <Contact/>
      
     </>
