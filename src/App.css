@@ -962,18 +962,13 @@
 }
 
 .kart {
-    height: 395px;
-    /* height: clamp(500px, 500rem, 200px); */
-    border: 1px solid rgba(0, 0, 0, 0.385);
+    height: 470px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
 .dlass {
-    /* height: clamp(300px,45px,100px); */
-    height: 35%;
-    /* width: 275px; */
-    /* width: clamp(300px, 425px, 200px); */
+    height: 55%;
     width: 100%;
     border-radius: 5px;
     overflow: hidden;
@@ -981,8 +976,6 @@
 
 .dlasss {
     height: 100%;
-    /* width: 275px; */
-    /* width: clamp(300px, 425px, 200px); */
     width: 100%;
 }
 
@@ -1057,14 +1050,12 @@
     align-items: center;
 }
 
-/* ===== MODAL CENTER ===== */
 .modal-centered {
     display: flex;
     align-items: center;
     min-height: calc(100% - 1rem);
 }
 
-/* ===== GLASS CARD ===== */
 .modal-content {
     border-radius: 18px;
     border: none;
@@ -1087,13 +1078,11 @@
     }
 }
 
-/* ===== HEADER ===== */
 .modal-header {
     border: none;
     padding: 22px;
 }
 
-/* ===== TITLE TABS ===== */
 .title {
     width: 100%;
     display: flex;
@@ -1126,7 +1115,6 @@
     position: absolute;
     width: 100%;
     height: 3px;
-    /* background: linear-gradient(90deg,); */
     background: linear-gradient(290deg, blue, white);
 
     bottom: -6px;
@@ -1134,7 +1122,6 @@
     border-radius: 10px;
 }
 
-/* ===== CLOSE BUTTON ===== */
 .cls {
     display: flex;
     align-items: center;
@@ -1221,9 +1208,10 @@
     background: rgba(0, 0, 0, 0.09);
     backdrop-filter: blur(6px);
 }
+
 .potfolio1 {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -1245,4 +1233,9 @@
     font-size: 18px;
     color: #555;
     cursor: pointer;
+}
+
+.modal {
+    height: 100%;
+    width: 20%;
 }

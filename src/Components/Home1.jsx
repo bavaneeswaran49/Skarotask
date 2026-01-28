@@ -18,10 +18,10 @@ export default function Home1() {
       .then((json) => setProducts(json));
   }, []);
 
-const filteredProducts = products.filter((item) =>
-  item.title.toLowerCase().includes(search.toLowerCase()) || 
-  item.price.toString().includes(search)                    
-);
+  const filteredProducts = products.filter((item) =>
+    item.title.toLowerCase().includes(search.toLowerCase()) ||
+    item.price.toString().includes(search)
+  );
 
 
   return (
@@ -43,7 +43,7 @@ const filteredProducts = products.filter((item) =>
               <i className="fa-regular fa-calendar icon1"></i>
               <h2 className="subcontant-h2">Business Strategy</h2>
               <p className="subcontant-p">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est voluptates neque quasi amet ipsum, aliquam quisquam consectetur nesciunt, voluptas enim maiores, sequi odit dolore similique sint maxime! Quaerat, repellat totam?
               </p>
             </div>
 
@@ -51,7 +51,7 @@ const filteredProducts = products.filter((item) =>
               <i className="fa-solid fa-cube icon1"></i>
               <h2 className="subcontant-h2">Web Development</h2>
               <p className="subcontant-p">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et voluptatum, vitae ad possimus esse libero exercitationem deserunt hic inventore eos ipsum in ratione unde sequi aperiam dolorum nisi, placeat eaque!
               </p>
             </div>
 
@@ -59,13 +59,12 @@ const filteredProducts = products.filter((item) =>
               <i className="fa-solid fa-computer-mouse icon1"></i>
               <h2 className="subcontant-h2">Marketing & Reporting</h2>
               <p className="subcontant-p">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex a iste neque vel, eius sint quasi incidunt, ut explicabo hic doloribus ratione. Dolore eum at, earum magni nesciunt facere? Exercitationem!
               </p>
             </div>
           </div>
         </div>
       </section>
-
       <About />
       <Service />
       <Work />
@@ -78,7 +77,7 @@ const filteredProducts = products.filter((item) =>
             <div className="inp">
               <input
                 type="text"
-                placeholder="get your Web"
+                placeholder="get your own Web"
                 className="form-control w-25"
                 value={search}
                 onChange={(e) => {
@@ -121,7 +120,6 @@ const filteredProducts = products.filter((item) =>
                 </div>
               ))}
           </div>
-
           {visibleCount < filteredProducts.length && (
             <div className="text-center my-4">
               <button
