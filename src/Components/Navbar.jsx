@@ -140,7 +140,7 @@ export default function Navbar() {
                 tabIndex="-1"
                 aria-hidden="true"
             >
-                <div className="modal-dialog">
+                <div className="modal-dialog modal-centered">
                     <div className="modal-content">
                         <div className="modal-header px-0 py-0">
                             <div className="title">
@@ -183,7 +183,7 @@ export default function Navbar() {
                                         <div className="col-md-6 position-relative">
                                             <label>Confirm Password</label>
                                             <input type={showPassword ? 'text' : 'password'} className="form-control" name="confirmPassword" value={formData.confirmPassword} onChange={handleChange} />
-                                            <i className={`fa-regular ${showPassword ? 'fa-eye' : 'fa-eye-slash'} password-eye`} onClick={() => setShowPassword(!showPassword)}></i>
+                                            <i className={`fa-regular ${showPassword ? 'fa-eye' : 'fa-solid fa-eye-slash'} password-eye`} onClick={() => setShowPassword(!showPassword)}></i>
                                             {errors.confirmPassword && <small className="text-danger">{errors.confirmPassword}</small>}
                                         </div>
 
@@ -203,7 +203,7 @@ export default function Navbar() {
                                         <div className="col-12 position-relative">
                                             <label>Password</label>
                                             <input type={showPassword ? 'text' : 'password'} className="form-control" name="password" value={formData.password} onChange={handleChange} />
-                                            <i className={`fa-regular ${showPassword ? 'fa-eye' : 'fa-eye-slash'} password-eye`} onClick={() => setShowPassword(!showPassword)}></i>
+                                            <i className={`fa-regular ${showPassword ? 'fa-eye' : 'fa-solid fa-eye-slash'} password-eye`} onClick={() => setShowPassword(!showPassword)}></i>
                                         </div>
 
                                         <div className="col-12">

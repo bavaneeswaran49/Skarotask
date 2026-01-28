@@ -839,26 +839,30 @@
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    
+
     /* background-color: #222642; */
 }
 
 .reg,
-.log,.cls {
+.log,
+.cls {
     width: 100%;
     cursor: pointer;
 }
-.cls{
+
+.cls {
     display: flex;
     /* justify-content: center; */
     align-items: end;
     width: 30%;
-    margin-left: 0px,!important;
+    margin-left: 0px, !important;
 }
-.btn-cls{
+
+.btn-cls {
     color: white;
     width: 20px;
 }
+
 .register,
 .login {
     padding: 18px 0;
@@ -1016,7 +1020,7 @@
     background-color: #0c0f1d;
     color: white;
     text-decoration: none;
-    
+
     padding: 5px 15px;
     border-radius: 150px;
 }
@@ -1026,7 +1030,8 @@
     background-color: white;
     transition-duration: 0.5s;
     transform: scale(1.05, 1.05);
-    transition-timing-function: ease-in-out;box-shadow: rgb(117, 117, 244) 0px 1px 0px, rgb(114, 114, 231) 0px 5px 24px, rgba(17, 17, 26, 0.1) 0px 6px 24px;
+    transition-timing-function: ease-in-out;
+    box-shadow: rgb(117, 117, 244) 0px 1px 0px, rgb(114, 114, 231) 0px 5px 24px, rgba(17, 17, 26, 0.1) 0px 6px 24px;
 }
 
 .ancho {
@@ -1040,12 +1045,204 @@
     transform: scale(1.05, 1.05);
     transition-timing-function: ease-in-out;
 }
-.modal-header{
+
+.modal-header {
     display: flex;
     justify-content: space-around;
 }
-.btn-close{
+
+.btn-close {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* ===== MODAL CENTER ===== */
+.modal-centered {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 1rem);
+}
+
+/* ===== GLASS CARD ===== */
+.modal-content {
+    border-radius: 18px;
+    border: none;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    animation: scaleIn 0.4s ease;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* ===== HEADER ===== */
+.modal-header {
+    border: none;
+    padding: 22px;
+}
+
+/* ===== TITLE TABS ===== */
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reg,
+.log {
+    cursor: pointer;
+}
+
+.register,
+.login {
+    font-size: 20px;
+    font-weight: 600;
+    color: #777;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.register.active,
+.login.active {
+    color: white;
+}
+
+.register.active::after,
+.login.active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    /* background: linear-gradient(90deg,); */
+    background: linear-gradient(290deg, blue, white);
+
+    bottom: -6px;
+    left: 0;
+    border-radius: 10px;
+}
+
+/* ===== CLOSE BUTTON ===== */
+.cls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-close {
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    padding: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn-close:hover {
+    background-color: #e2e2e2;
+    transform: rotate(360deg);
+    transition-duration: 120s;
+    transition-timing-function: linear;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.form label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+.form-control {
+    border: none;
+    border-radius: 10px;
+    padding: 12px 14px;
+    background: #f4f6f8;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    background: #fff;
+    box-shadow: 0 0 0 2px rgba(106, 17, 203, 0.35);
+}
+
+.password-eye {
+    position: absolute;
+    right: 14px;
+    top: 42px;
+    cursor: pointer;
+    color: #777;
+    transition: color 0.2s ease;
+}
+
+.password-eye:hover {
+    color: #000;
+}
+
+.form button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: 600;
+    background: linear-gradient(185deg, blue, white);
+    transition-duration: 2s;
+    color: #000;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(37, 117, 252, 0.4);
+    background: linear-gradient(280deg, blue, white);
+
+}
+
+.text-danger {
+    font-size: 12px;
+}
+
+
+.modal-backdrop.show {
+    background: rgba(0, 0, 0, 0.09);
+    backdrop-filter: blur(6px);
+}
+.potfolio1 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.inp {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    gap: 8px;
+}
+
+.inp input {
+    flex: 1;
+    padding: 8px 12px;
+    font-size: 16px;
+}
+
+.sear {
+    font-size: 18px;
+    color: #555;
+    cursor: pointer;
 }
