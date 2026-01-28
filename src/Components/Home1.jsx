@@ -22,8 +22,6 @@ export default function Home1() {
     item.title.toLowerCase().includes(search.toLowerCase()) ||
     item.price.toString().includes(search)
   );
-
-
   return (
     <>
       <Navbar1 />
@@ -43,8 +41,7 @@ export default function Home1() {
               <i className="fa-regular fa-calendar icon1"></i>
               <h2 className="subcontant-h2">Business Strategy</h2>
               <p className="subcontant-p">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est voluptates neque quasi amet ipsum, aliquam quisquam consectetur nesciunt, voluptas enim maiores, sequi odit dolore similique sint maxime! Quaerat, repellat totam?
-              </p>
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et voluptatum, vitae ad possimus esse libero exercitationem deserunt hic inventore eos ipsum in ratione unde sequi aperiam dolorum nisi, placeat eaque!              </p>
             </div>
 
             <div className="col-md-4 Subcontant1">
@@ -59,8 +56,7 @@ export default function Home1() {
               <i className="fa-solid fa-computer-mouse icon1"></i>
               <h2 className="subcontant-h2">Marketing & Reporting</h2>
               <p className="subcontant-p">
-               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex a iste neque vel, eius sint quasi incidunt, ut explicabo hic doloribus ratione. Dolore eum at, earum magni nesciunt facere? Exercitationem!
-              </p>
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et voluptatum, vitae ad possimus esse libero exercitationem deserunt hic inventore eos ipsum in ratione unde sequi aperiam dolorum nisi, placeat eaque!              </p>
             </div>
           </div>
         </div>
@@ -69,56 +65,54 @@ export default function Home1() {
       <Service />
       <Work />
       <Fact />
-
       <div id="potfolio">
-        <div className="container my-5">
-          <div className="potfolio1 d-flex justify-content-between align-items-center mb-4">
-            <h2>Portfolio</h2>
-            <div className="inp">
-              <input
-                type="text"
-                placeholder="get your own Web"
-                className="form-control w-25"
-                value={search}
-                onChange={(e) => {
-                  setSearch(e.target.value);
-                  setVisibleCount(4);
-                }}
-              /><i class="fa-solid fa-magnifying-glass sear"></i>
+        <div className="py-5">
+          <div className="container ">
+            <div className="potfolio1 d-flex justify-content-between align-items-center  ">
+              <h2 className="pot">Portfolio</h2>
+              <div className="inp">
+                <input
+                  type="text"
+                  placeholder="get your own Web"
+                  className="form-control w-25"
+                  value={search}
+                  onChange={(e) => {
+                    setSearch(e.target.value);
+                    setVisibleCount(20);
+                  }}
+                /><i class="fa-solid fa-magnifying-glass sear"></i>
+              </div>
             </div>
-          </div>
-          <div className="row">
-            {filteredProducts
-              .slice(0, visibleCount)
-              .map((items) => (
-                <div key={items.id} className="col-lg-3 col-md-4 col-sm-6">
-                  <div className="p-3 my-2 kart">
-                    <h4 className="oone">{items.title}</h4>
-
-                    <div className="dlass">
-                      <img
-                        src={items.image}
-                        alt={items.title}
-                        className="dlasss"
-                        loading="lazy"
-                      />
-                    </div>
-
-                    <p className="ppp">Price ${items.price}</p>
-                    <p className="pp">
-                      Rating : {items.rating.rate}
-                      <i className="fa-solid fa-star star"></i>
-                    </p>
-                    <p>No of Users : {items.rating.count}</p>
-
-                    <div className="div">
-                      <a className="anchor" href={items.button}>
-                        <button className="btn-load">View Demo</button>
-                      </a>
+            <div className="row">
+              {filteredProducts
+                .slice(0, visibleCount)
+                .map((items) => (
+                  <div key={items.id} className="col-lg-3 col-md-4 col-sm-6">
+                    <div className="p-3 my-2 kart">
+                      <h4 className="oone">{items.title}</h4>
+                      <div className="dlass">
+                        <img
+                          src={items.image}
+                          alt={items.title}
+                          className="dlasss"
+                          loading="lazy"
+                        />
+                      </div>
+                      <p className="ppp">Price ${items.price}</p>
+                      <p className="pp">
+                        Rating : {items.rating.rate}
+                        <i className="fa-solid fa-star star"></i>
+                      </p>
+                      <p>No of Users : {items.rating.count}</p>
+                      <div className="div">
+                        <a className="anchor" href={items.button}>
+                          <button className="btn-load">View Demo</button>
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+            </div>
           </div>
           {visibleCount < filteredProducts.length && (
             <div className="text-center my-4">
@@ -132,7 +126,6 @@ export default function Home1() {
           )}
         </div>
       </div>
-
       <Contact />
     </>
   );

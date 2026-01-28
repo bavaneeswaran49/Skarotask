@@ -109,7 +109,7 @@
 
 .servicesContent,
 .factContent-h1,
-.newsContent-h1 {
+.newsContent-h1,.pot {
     font-family: "Archivo", sans-serif;
     font-size: clamp(1.5rem, 3vw, 4.25rem);
     padding-bottom: clamp(20px, 1vw, 50px);
@@ -962,7 +962,8 @@
 }
 
 .kart {
-    height: 470px;
+    height: 465px;
+    border: 1px solid rgba(0, 0, 0, 0.216);
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -1234,8 +1235,16 @@
     color: #555;
     cursor: pointer;
 }
+.sear:hover{
+    color: #000;   transform: scale(1.1,1.1);
+    transition-duration: 1s;
+ 
+}
 
 .modal {
     height: 100%;
     width: 20%;
+}
+.potfolio1{
+margin-top: clamp(40px, 6vw, 100px);
 }
