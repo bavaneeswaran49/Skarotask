@@ -1240,7 +1240,8 @@
 
 }
 .sward1{
-     padding-top: 25vh;
+    padding-top: clamp(80px, 15vh, 400px);
+
 }
 .link-card {
     text-decoration: none !important;

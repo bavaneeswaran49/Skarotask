@@ -27,9 +27,7 @@ export default function ProductView() {
       <Navbar1 />
 
       <div className="container py-5 pharmas">
-        <div>
-          <h1 className="kproduct">Cosmetics</h1>
-        </div>
+
         <div className="row">
           <div className="sward col-lg-5 ">
             <h2 className="pharmass">{product.title}</h2>
@@ -46,14 +44,22 @@ export default function ProductView() {
             <p><strong>Rating :</strong> {product.rating}</p>
             <p><strong>Stock :</strong> {product.stock}</p>
             <div className="mt-3">
-              <div class="buttons">
-                <button class="btn"><span></span><p data-start="good luck!" data-text="Add to Cart" data-title="You Like it!"></p></button>
+              <div className="buttons">
+                <button className="btn" >
+                  <span></span>
+                  <p
+                    data-start="good luck!"
+                    data-text=" ❤️! "
+                    data-title="Add to Cart"
+                  ></p>
+                </button>
               </div>
             </div>
+
           </div>
         </div></div>
-        <Fackapi/>
-        <Contact/>
+      <Fackapi />
+      <Contact />
     </>
   );
 }
