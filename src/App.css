@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap'); */
 
 * {
     margin: 0px;
@@ -32,7 +31,6 @@
 }
 
 .homeSection {
-    /* height: clamp(375px, 42rem, 1440px); */
     background-color: #0c0f1d;
     padding-bottom: clamp(5rem, 7vw, 7rem);
     padding-top: clamp(5rem, 7vw, 1rem);
@@ -75,7 +73,6 @@
 
 
 .about-content {
-    /* background-color: #f5f5f5; */
     padding-top: clamp(10rem, 5vw, 25rem);
 }
 
@@ -89,10 +86,8 @@
     width: clamp(300px, 25vw, 500px);
     height: 90%;
     border-radius: 50px;
-    /* padding-bottom: clamp(3rem, 2vw, 2rem); */
     border-bottom-left-radius: 50px;
     object-fit: cover;
-    /* border-bottom-right-radius: 50px; */
 
 
 }
@@ -102,14 +97,15 @@
     font-size: clamp(1.5rem, 3vw, 4.25rem);
     padding-bottom: clamp(20px, 1vw, 50px);
     font-weight: 700;
-    /* justify-content: start; */
     width: clamp(180px, 100vw, 235px);
 
 }
 
 .servicesContent,
 .factContent-h1,
-.newsContent-h1,.pot {
+.newsContent-h1,
+.kproduct,
+.pot {
     font-family: "Archivo", sans-serif;
     font-size: clamp(1.5rem, 3vw, 4.25rem);
     padding-bottom: clamp(20px, 1vw, 50px);
@@ -125,6 +121,7 @@
 
 .about-p {
     line-height: clamp(1.5rem, 2vw, 2.5rem);
+    font-size: 15px;
 }
 
 .servicesSection {
@@ -200,15 +197,12 @@
 .BlogSection {
     background-image: url(https://wallpapers.com/images/hd/subtle-background-94h7t2dpwzykbnvy.jpg);
     object-fit: cover;
-    /* background-repeat: no-repeat; */
     padding-top: clamp(3rem, 7vw, 5rem);
     padding-bottom: clamp(3rem, 7vw, 5rem);
 }
 
 .blogContent-h1 {
-    /* font-family: "Archivo", sans-serif; */
     font-size: clamp(1rem, 2vw, 4rem);
-    /* padding-bottom: clamp(20px, 2vw, 50px); */
     font-weight: 600;
 }
 
@@ -223,14 +217,11 @@
 
 .newsSection {
     padding-top: clamp(5rem, 1.5vw, 10rem);
-    /* padding-bottom: clamp(.5rem, 5.25vw, 5rem); */
 }
 
 .news-subcontant1 {
     background-image: url(https://rainbowit.net/themes/trydo/wp-content/uploads/2020/04/trydo-blog-new-10-390x532.jpg);
     height: clamp(290px, 33vw, 640px);
-    /* width: 375px; */
-    /* width: clamp(280px, 90vw, 375px); */
     width: clamp(300px, 91vw, 395px);
     background-size: cover;
     background-position: center;
@@ -240,8 +231,6 @@
 .news-subcontant2 {
     background-image: url(https://rainbowit.net/themes/trydo/wp-content/uploads/2020/04/trydo-blog-new-7-390x532.jpg);
     height: clamp(290px, 33vw, 640px);
-    /* width:375px; */
-    /* width: clamp(280px, 90vw, 375px); */
     width: clamp(300px, 91vw, 395px);
     background-size: cover;
     background-position: center;
@@ -252,8 +241,6 @@
 .news-subcontant3 {
     background-image: url(https://images.pexels.com/photos/33018517/pexels-photo-33018517.jpeg);
     height: clamp(290px, 33vw, 640px);
-    /* width: 375px; */
-    /* width: clamp(280px, 90vw, 375px); */
     width: clamp(300px, 91vw, 395px);
     background-size: cover;
     background-position: center;
@@ -262,7 +249,6 @@
 
 .news-subcontant-row {
     justify-content: space-evenly;
-    /* gap: 50px; */
 }
 
 .news-subcontant-h4 {
@@ -290,7 +276,6 @@
     background-color: #0c0f1d;
     color: white;
     padding-top: clamp(2rem, 5vw, 5rem);
-    /* padding-top: clamp(2rem, 5vw, 5rem); */
     padding-bottom: clamp(2rem, 5vw, 5rem);
 }
 
@@ -299,7 +284,6 @@
         background-color: #0c0f1d;
         padding-bottom: 20px;
         padding-left: 20px;
-        /* border-radius: 20px; */
     }
 
 }
@@ -317,7 +301,6 @@
 }
 
 .FooterSection {
-    /* background-color: pink; */
     background: linear-gradient(135deg, #ff7a18, #d4145a);
     background-image: url(https://images.pexels.com/photos/18418360/pexels-photo-18418360.jpeg);
     background-size: cover;
@@ -384,19 +367,18 @@
 }
 
 .newslogo-img {
-    width: clamp(60px, 15vw, 150px);
+    width: clamp(60px, 14vw, 135px);
     height: clamp(50px, 5vw, 150px);
 }
 
 .udmy {
-    width: clamp(100px, 20vw, 200px);
+    width: clamp(100px, 1vw, 180px);
     height: clamp(90px, 11vw, 160px);
 }
 
 .logo-news {
     display: flex;
-    justify-content: space-evenly;
-    /* gap: clamp(1rem, 2vw, 3rem); */
+    justify-content: space-around;
     align-items: center;
     padding-top: clamp(2rem, 5vw, 5rem);
     padding-bottom: clamp(2rem, 3.5vw, 4rem);
@@ -405,10 +387,7 @@
 .logo1-news {
     display: flex;
     justify-content: space-evenly;
-    /* gap: clamp(1rem, 2vw, 3rem); */
     align-items: center;
-    /* padding-top: clamp(2rem, 3.5vw, 4rem); */
-    /* padding-bottom: clamp(2rem, 3.5vw, 4rem); */
 }
 
 .subcontant-p {
@@ -445,12 +424,9 @@
     max-width: clamp(300px, 90vw, 1050px);
     display: flex;
     justify-content: center;
-    /* horizontal */
     align-items: center;
-    /* vertical if needed */
     text-align: center;
     padding: clamp(1rem, 2vw, 2rem);
-    /* optional spacing */
 }
 
 .blog-head {
@@ -460,18 +436,14 @@
 }
 
 .about-content {
-    /* position: relative; */
     padding-bottom: clamp(5rem, 5vw, 10rem);
 }
 
 .line1 {
     border-bottom: 2px solid blue;
-    /* width: clamp(80px, 20vw, 150px); */
-    /* margin-top: clamp(1rem, 2vw, 3rem); */
     padding-bottom: clamp(0.5rem, .5vw, 2rem);
     font-weight: 600;
     cursor: pointer;
-    /* color: blue; */
 }
 
 .line1:hover {
@@ -511,9 +483,7 @@
     padding-bottom: clamp(2rem, 2vw, 4rem);
 }
 
-/* .subcontant-p{
-    padding-bottom: clamp(2rem, 10vw, 8rem);
-} */
+
 @media (max-width:425px) {
     .service-icon1 {
         display: flex;
@@ -529,12 +499,8 @@
 .arr {
     width: 40px;
     height: 40px;
-    /* border-left: 3px solid white; */
-    /* border-bottom: 3px solid white; */
-    /* transform: rotate(-45deg); */
     margin-left: auto;
     margin-right: auto;
-    /* margin-top: clamp(1rem, 2vw, 3rem); */
     left: 93%;
     position: fixed;
     bottom: 50px;
@@ -580,7 +546,7 @@
 
 .fact-content {
     padding-top: clamp(1rem, 5vw, 4rem);
-    /* padding-bottom: clamp(1rem, 5vw, 3rem); */
+
 }
 
 .fact-row {
@@ -648,7 +614,6 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    /* padding: 20px; */
 }
 
 .abt-cnt-2div1-p,
@@ -688,6 +653,13 @@
 .services-p2 {
     text-align: justify;
     line-height: 1.6;
+    font-size: 15px;
+}
+
+.services-p1 {
+    text-align: justify;
+    /* line-height: 1.6; */
+    font-size: 15px;
 }
 
 .work-content {
@@ -724,7 +696,6 @@
 
 .newsContent-pp {
     max-width: 700px;
-    /* margin: 16px auto 0;        */
     text-align: justify;
     line-height: 1.7;
 }
@@ -732,12 +703,10 @@
 @media (max-width: 576px) {
     .newsContent-pp {
         max-width: 100%;
-        /* padding: 0 15px;        */
     }
 }
 
 .workContent-p {
-    /* max-width: 800px;           */
     margin: 16px auto 0;
     text-align: justify;
     line-height: 1.7;
@@ -792,7 +761,6 @@
 }
 
 .height {
-    /* height: clamp(600px, 80vh, 700px); */
     height: 425px;
     width: clamp(400px, 60vw, 700px);
     border-radius: 20px;
@@ -810,8 +778,6 @@
     justify-content: space-around;
     background-color: #0c0f1d;
     color: white;
-    /* border-top-left-radius: 20px; */
-    /* border-top-right-radius: 20px; */
 }
 
 .for {
@@ -829,7 +795,6 @@
 
 .height {
     width: clamp(320px, 60vw, 700px);
-    /* height: clamp(10vh, 85vh, 110vh); */
     background: #fff;
     border-radius: 20px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
@@ -839,8 +804,6 @@
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-
-    /* background-color: #222642; */
 }
 
 .reg,
@@ -852,7 +815,6 @@
 
 .cls {
     display: flex;
-    /* justify-content: center; */
     align-items: end;
     width: 30%;
     margin-left: 0px, !important;
@@ -1204,7 +1166,6 @@
     font-size: 12px;
 }
 
-
 .modal-backdrop.show {
     background: rgba(0, 0, 0, 0.09);
     backdrop-filter: blur(6px);
@@ -1235,16 +1196,248 @@
     color: #555;
     cursor: pointer;
 }
-.sear:hover{
-    color: #000;   transform: scale(1.1,1.1);
+
+.sear:hover {
+    color: #000;
+    transform: scale(1.1, 1.1);
     transition-duration: 1s;
- 
+
 }
 
 .modal {
     height: 100%;
     width: 20%;
+
 }
-.potfolio1{
-margin-top: clamp(40px, 6vw, 100px);
+
+.potfolio1 {
+    margin-top: clamp(40px, 6vw, 100px);
+}
+
+.kartt {
+    border: 1px solid rgba(0, 0, 0, 0.445);
+    margin-top: clamp(10px, 6vw, 30px);
+    border-radius: 7px;
+}
+
+.tamil {
+    height: 200px;
+    width: 250px;
+
+}
+
+.disc {
+    text-align: justify;
+}
+
+.pharmas {
+    display: flex;
+    justify-content: center;
+}
+
+.pharmass {
+    padding-top: 15vh;
+
+}
+.sward1{
+     padding-top: 25vh;
+}
+.link-card {
+    text-decoration: none !important;
+    color: inherit;
+    display: block;
+}
+.img-phar{
+    display: flex;
+    justify-content: center;
+}
+.link-card:hover,
+.link-card:focus,
+.link-card:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.img-phar {
+    display: flex;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    top: 20px;
+    left: 20px;
+}
+
+.buttons button {
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    margin: 20px;
+    color: #0c0f1d;
+    position: relative;
+    overflow: hidden;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.buttons button:before,
+.buttons button:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #0c0f1d;
+    transition: all 0.3s cubic-bezier(0.35, 0.1, 0.25, 1);
+}
+
+.buttons button:before {
+    right: 0;
+    top: 0;
+    transition: all 0.5s cubic-bezier(0.35, 0.1, 0.25, 1);
+}
+
+.buttons button:after {
+    left: 0;
+    bottom: 0;
+}
+
+.buttons button span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.buttons button span:before,
+.buttons button span:after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 0;
+    background-color: #0c0f1d;
+    transition: all 0.3s cubic-bezier(0.35, 0.1, 0.25, 1);
+}
+
+.buttons button span:before {
+    right: 0;
+    top: 0;
+    transition: all 0.5s cubic-bezier(0.35, 0.1, 0.25, 1);
+}
+
+.buttons button span:after {
+    left: 0;
+    bottom: 0;
+}
+
+.buttons button p {
+    padding: 0;
+    margin: 0;
+    transition: all 0.4s cubic-bezier(0.35, 0.1, 0.25, 1);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.buttons button p:before,
+.buttons button p:after {
+    position: absolute;
+    width: 100%;
+    transition: all 0.4s cubic-bezier(0.35, 0.1, 0.25, 1);
+    z-index: 1;
+    left: 0;
+}
+
+.buttons button p:before {
+    content: attr(data-title);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.buttons button p:after {
+    content: attr(data-text);
+    top: 150%;
+    color: #0c0f1d;
+}
+
+.buttons button:hover:before,
+.buttons button:hover:after {
+    width: 100%;
+}
+
+.buttons button:hover span {
+    z-index: 1;
+}
+
+.buttons button:hover span:before,
+.buttons button:hover span:after {
+    height: 100%;
+}
+
+.buttons button:hover p:before {
+    top: -50%;
+    transform: rotate(5deg);
+}
+
+.buttons button:hover p:after {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.buttons button.start {
+    background-color: #0c0f1d;
+    box-shadow: 0px 5px 10px -10px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.buttons button.start p:before {
+    top: -50%;
+    transform: rotate(5deg);
+}
+
+.buttons button.start p:after {
+    color: white;
+    transition: all 0s ease;
+    content: attr(data-start);
+    top: 50%;
+    transform: translateY(-50%);
+    animation: start 0.3s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes start {
+    from {
+        top: -50%;
+    }
+}
+
+.buttons button.start:hover:before,
+.buttons button.start:hover:after {
+    display: none;
+}
+
+.buttons button.start:hover span {
+    display: none;
+}
+
+.buttons button:active {
+    outline: none;
+    border: none;
+}
+
+.buttons button:focus {
+    outline: 0;
 }

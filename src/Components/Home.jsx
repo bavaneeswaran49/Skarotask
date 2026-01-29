@@ -15,17 +15,17 @@ export default function Home() {
         <div className='home-sub1 container '>
           <div className='row'>
             <div className='col-md-4 Subcontant1'>
-              <i class="fa-regular fa-calendar icon1"></i>
+              <i className="fa-regular fa-calendar icon1"></i>
               <h2 className='subcontant-h2'>Business Strategy</h2>
               <p className='subcontant-p'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus molestias placeat doloremque sed, distinctio nesciunt porro officia quas rem eveniet, vel vitae non dolor error excepturi dolores possimus corporis facere.</p>
             </div>
             <div className='col-md-4 Subcontant1'>
-              <i class="fa-solid fa-cube icon1"></i>
+              <i className="fa-solid fa-cube icon1"></i>
               <h2 className='subcontant-h2'>Web Development</h2>
               <p className='subcontant-p'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus molestias placeat doloremque sed, distinctio nesciunt porro officia quas rem eveniet, vel vitae non dolor error excepturi dolores possimus corporis facere.</p>
             </div>
             <div className='col-md-4 Subcontant1'>
-              <i class="fa-solid fa-computer-mouse icon1 "></i>
+              <i className="fa-solid fa-computer-mouse icon1 "></i>
               <h2 className='subcontant-h2'>Marketing & Reporting</h2>
               <p className='subcontant-p'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus molestias placeat doloremque sed, distinctio nesciunt porro officia quas rem eveniet, vel vitae non dolor error excepturi dolores possimus corporis facere.</p>
             </div>

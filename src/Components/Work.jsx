@@ -93,14 +93,14 @@ export default function Work() {
               type="button"
               data-bs-target="#cardCarousel"
               data-bs-slide="prev">
-              <i class="fa-solid fa-arrow-left"></i>
+              <i className="fa-solid fa-arrow-left"></i>
             </button>
             <button
               className="carousel-control-next"
               type="button"
               data-bs-target="#cardCarousel"
               data-bs-slide="next">
-              <i class="fa-solid fa-arrow-right-long"></i>
+              <i className="fa-solid fa-arrow-right-long"></i>
             </button>
           </div>
         </div>

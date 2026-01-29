@@ -2,8 +2,8 @@ import React from 'react'
 import Navbar from './Navbar.jsx'
 export default function Contact() {
   return (
-   <>
-    <div className='footerSpacer' id='footerSpacer'>
+    <>
+      <div className='footerSpacer' id='footerSpacer'>
         <div className='mainfooter1'>
           <div className='mainfooter'>
             <section className='FooterSection'>
@@ -11,9 +11,14 @@ export default function Contact() {
                 <div className=' footer-contant1'>
                   <p>Ready To  Do This</p>
                   <h1 className='footer-contant1-h2'>Let's get<br></br> to work</h1>
-                  <button className="btn btn-outline-light" type="submit">
-                    Contact Us
-                  </button>
+
+                  <a href="mailto:bavaneeswaran49@gmail.com">
+                    <button className="btn btn-outline-light" type="button">
+                      Contact Us
+                    </button>
+                  </a>
+
+
                 </div>
               </div>
             </section>
@@ -32,10 +37,10 @@ export default function Contact() {
                     <p className='text-white'>About</p>
                     <p className='text-white '>Services</p>
                     <div className='footer2-content1 f-p d-flex gap-3'>
-                      <i class="fa-brands fa-linkedin-in ficon "></i>
-                      <i class="fa-brands fa-facebook-f ficon"></i>
-                      <i class="fa-brands fa-twitter ficon"></i>
-                      <i class="fa-brands fa-instagram ficon"></i>
+                      <i className="fa-brands fa-linkedin-in ficon "></i>
+                      <i className="fa-brands fa-facebook-f ficon"></i>
+                      <i className="fa-brands fa-twitter ficon"></i>
+                      <i className="fa-brands fa-instagram ficon"></i>
                     </div>
                   </div>
                 </div>
@@ -43,7 +48,7 @@ export default function Contact() {
                   <p className='footer2-content-p text-white mx-5 '>© 2024 Try Do Digital Agency. All rights reserved.</p>
                   <div className='arr md-block md-d-none'>
                     <a href='#home'>
-                      <i class="fa-solid fa-angle-up farr"></i>
+                      <i className="fa-solid fa-angle-up farr"></i>
                     </a>
                   </div>
                 </div>
@@ -52,6 +57,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-   </> 
+    </>
   )
 }

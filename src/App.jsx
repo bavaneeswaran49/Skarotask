@@ -9,7 +9,8 @@ import Service from './Components/Service.jsx'
 import Contact from './Components/Contact.jsx'
 import Sub from './Subscribe/Sub.jsx'
 import Home1 from './Components/Home1.jsx'
-// import Summa from './Subscribe/Summa.jsx'
+import Fackapi from './Components/Fackapi.jsx';
+import ProductView from './Components/ProductView'  
 import Navbar from './Components/Navbar';
 function App() {
   return (
@@ -23,10 +24,9 @@ function App() {
         <Route path='/Contact' element={<Contact />} />
         <Route path='/Subscribe' element={<Sub />} />
         <Route path='/Home1' element={<Home1 />} />
-        {/* <Route path='/Summa' element={<Summa />} /> */}
-
+        <Route path='/products' element={<Fackapi />} />
+        <Route path='/product/:id' element={<ProductView />} /> 
       </Routes>
-
     </>
   )
 }

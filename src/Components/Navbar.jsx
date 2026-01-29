@@ -135,7 +135,7 @@ export default function Navbar() {
                 </nav>
             </section>
             <div
-                className="modal fade"
+                className="modal fade"  
                 id="exampleModal"
                 tabIndex="-1"
                 aria-hidden="true"
@@ -188,7 +188,7 @@ export default function Navbar() {
                                         </div>
 
                                         <div className="col-12">
-                                            <button className="btn btn-primary w-50" type="submit">Register</button>
+                                            <button className="btn  w-50" type="submit">Register</button>
                                         </div>
                                     </form>
                                 </div>
@@ -207,7 +207,7 @@ export default function Navbar() {
                                         </div>
 
                                         <div className="col-12">
-                                            <button className="btn btn-primary w-50" type="submit">Login</button>
+                                            <button className="btn  w-50" type="submit">Login</button>
                                         </div>
                                     </form>
                                 </div>

@@ -6,11 +6,13 @@ import Service from "./Service";
 import Work from "./Work";
 import Contact from "./Contact";
 import Fact from "./Fact";
+import Fackapi from "./Fackapi";
 
 export default function Home1() {
   const [products, setProducts] = useState([]);
   const [visibleCount, setVisibleCount] = useState(4);
   const [search, setSearch] = useState("");
+  // const [api, setApi] = useState([]);
 
   useEffect(() => {
     fetch("carosilimg.json")
@@ -22,6 +24,16 @@ export default function Home1() {
     item.title.toLowerCase().includes(search.toLowerCase()) ||
     item.price.toString().includes(search)
   );
+
+  // useEffect(() => {
+  //   fetch('https://dummyjson.com/products')
+  //     .then(res => res.json())
+  //     .then((rdata) => {
+  //       setApi(rdata.products);
+  //       console.log(rdata);
+  //     });
+  // }, [])
+
   return (
     <>
       <Navbar1 />
@@ -41,7 +53,7 @@ export default function Home1() {
               <i className="fa-regular fa-calendar icon1"></i>
               <h2 className="subcontant-h2">Business Strategy</h2>
               <p className="subcontant-p">
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et voluptatum, vitae ad possimus esse libero exercitationem deserunt hic inventore eos ipsum in ratione unde sequi aperiam dolorum nisi, placeat eaque!              </p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et voluptatum, vitae ad possimus esse libero exercitationem deserunt hic inventore eos ipsum in ratione unde sequi aperiam dolorum nisi, placeat eaque!              </p>
             </div>
 
             <div className="col-md-4 Subcontant1">
@@ -56,7 +68,7 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et voluptatum, vitae a
               <i className="fa-solid fa-computer-mouse icon1"></i>
               <h2 className="subcontant-h2">Marketing & Reporting</h2>
               <p className="subcontant-p">
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et voluptatum, vitae ad possimus esse libero exercitationem deserunt hic inventore eos ipsum in ratione unde sequi aperiam dolorum nisi, placeat eaque!              </p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et voluptatum, vitae ad possimus esse libero exercitationem deserunt hic inventore eos ipsum in ratione unde sequi aperiam dolorum nisi, placeat eaque!              </p>
             </div>
           </div>
         </div>
@@ -80,7 +92,7 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et voluptatum, vitae a
                     setSearch(e.target.value);
                     setVisibleCount(20);
                   }}
-                /><i class="fa-solid fa-magnifying-glass sear"></i>
+                /><i className="fa-solid fa-magnifying-glass sear"></i>
               </div>
             </div>
             <div className="row">
@@ -125,8 +137,9 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et voluptatum, vitae a
             </div>
           )}
         </div>
-      </div>
+      </div>  <Fackapi/>
       <Contact />
+    
     </>
   );
 }
